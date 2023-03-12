@@ -20,7 +20,7 @@ int main(){
     pid2 = fork();
     if(pid1>0 && pid2>0){ // processo padre
         printf("sono il processo padre pid: %d\n"
-               "devo calcolare z=x+y\n", getppid());
+               "devo calcolare z=x+y \n", getppid());
 
         printf("chiudo la scrittura\n", getppid());
         close(fd[1]); // chiudo la scrittura; il lato inutilizzato della pipe va' chiuso
