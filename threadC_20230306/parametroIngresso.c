@@ -16,7 +16,9 @@ void* code(void* arg);
 int main(){
 	pthread_t tid;
 	int ingresso=1;
-	pthread_create(&tid, NULL, code, (void*) &ingresso);
+	pthread_create(&tid, NULL, code, &ingresso);
+
+	sleep(1);
 
 	return 0;
 }
